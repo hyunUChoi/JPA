@@ -1,9 +1,9 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
     password: 1234
-    url: jdbc:mysql://localhost:3306/board?serverTimezone=UTC&characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3306/jpa_db?serverTimezone=UTC&characterEncoding=UTF-8
 
   jpa:
     database: mysql
@@ -14,3 +14,10 @@ spring:
       hibernate:
         format_sql: true
     show-sql: true
+
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    check-template-location: true
+    mode: HTML
+    cache: false

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko" class="light-style layout-menu-fixed layout-compact " dir="ltr" data-theme="theme-default" data-assets-path="/assets/" data-template="vertical-menu-template-free" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}" layout:fragment="content">
+<script th:inline="javascript">
+</script>
+<h4 class="fw-bold py-3 mb-4">JPA</h4>
+<div class="card">
+	<form id="defaultFrm" method="post" onsubmit="return false;">
+		<div class="card-header">
+			<div class="input-group">
+				<input type="text" class="form-control"/>
+				<a class="btn btn-outline-primary">Search</a>
+			</div>
+		</div>
+	</form>
+	<div class="card-datatable table-responsive">
+		<div class="dataTables_wrapper dt-bootstrap5 no-footer">
+			<div id="tbl"></div>
+		</div>
+	</div>
+</div>
+</html>

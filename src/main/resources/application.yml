@@ -1,3 +1,6 @@
+server:
+  port: 8000
+
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -13,7 +16,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
-    show-sql: true
+        show-sql: true
 
   thymeleaf:
     prefix: classpath:templates/
